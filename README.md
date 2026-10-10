@@ -1,5 +1,5 @@
 
-# 🎬 Taller 03 | Análisis de Redes y Sistemas de Recomendación
+#  Taller 03 Análisis de Redes y Sistemas de Recomendación
 
 ### Maestría en Ciencia de Datos
 
@@ -7,9 +7,9 @@
 **Lenguaje:** Python  
 **Entorno de desarrollo:** Google Colab
 
----
 
-## 📌 Descripción del proyecto
+
+##  Descripción del proyecto
 
 Este proyecto integra técnicas de **análisis de redes y sistemas de recomendación** para estudiar las interacciones entre usuarios y películas utilizando el conjunto de datos MovieLens 100K.
 
@@ -22,7 +22,7 @@ El análisis se realiza en Python utilizando herramientas de ciencia de datos y 
 
 ---
 
-## 🎯 Objetivo general
+##  Objetivo general
 
 Analizar las relaciones entre usuarios y películas mediante teoría de grafos y desarrollar modelos de recomendación capaces de estimar las preferencias de los usuarios.
 
@@ -38,7 +38,7 @@ Analizar las relaciones entre usuarios y películas mediante teoría de grafos y
 
 ---
 
-## 📊 1. Conjunto de datos: MovieLens 100K
+##  1. Conjunto de datos: MovieLens 100K
 
 MovieLens 100K contiene calificaciones de películas realizadas por diferentes usuarios.
 
@@ -58,17 +58,17 @@ El análisis exploratorio permitió identificar que las calificaciones de 4 y 5 
 
 | Calificación | Frecuencia |
 |:---:|---:|
-| ⭐ 1 | 6.110 |
-| ⭐⭐ 2 | 11.370 |
-| ⭐⭐⭐ 3 | 27.145 |
-| ⭐⭐⭐⭐ 4 | 34.174 |
-| ⭐⭐⭐⭐⭐ 5 | 21.201 |
+| 1 | 6.110 |
+| 2 | 11.370 |
+| 3 | 27.145 |
+| 4 | 34.174 |
+| 5 | 21.201 |
 
 **Interpretación:** aproximadamente el 55,38 % de las calificaciones corresponde a 4 o 5 estrellas, lo que muestra una mayor frecuencia de valoraciones positivas dentro del conjunto de datos.
 
----
 
-## 🕸️ 2. Análisis de redes
+
+##  2. Análisis de redes
 
 ### Construcción del grafo bipartito
 
@@ -98,9 +98,9 @@ En la muestra analizada se obtuvo un coeficiente promedio aproximado de **0,1013
 
 Este resultado describe la muestra seleccionada y no debe interpretarse automáticamente como el valor de toda la red.
 
----
 
-## 🔍 3. Detección de comunidades: Girvan-Newman
+
+##  3. Detección de comunidades: Girvan-Newman
 
 Se aplicó el algoritmo **Girvan-Newman** para explorar la división de una subred en comunidades.
 
@@ -120,9 +120,9 @@ Por su costo computacional, el análisis se realizó sobre una subred de:
 
 Los resultados se representaron mediante visualizaciones de redes con colores para distinguir las comunidades.
 
----
 
-## 🤖 4. Sistemas de recomendación
+
+##  4. Sistemas de recomendación
 
 Se implementaron dos modelos de filtrado colaborativo utilizando Scikit-Surprise.
 
@@ -145,9 +145,8 @@ Para evaluar los modelos, las calificaciones se dividieron en:
 
 Se utilizó `random_state=42` para facilitar la reproducibilidad de la separación.
 
----
 
-## 📈 5. Evaluación de modelos
+##  5. Evaluación de modelos
 
 Los modelos se evaluaron utilizando **RMSE (Root Mean Squared Error)**.
 
@@ -164,9 +163,9 @@ RMSE mide la diferencia entre las calificaciones reales y las predicciones del m
 
 En la evaluación inicial, SVD obtuvo un menor error que KNN.
 
----
 
-## ⚙️ 6. Optimización con GridSearchCV
+
+##  6. Optimización con GridSearchCV
 
 Se utilizó GridSearchCV para buscar combinaciones de hiperparámetros y mejorar el rendimiento de los modelos.
 
@@ -190,9 +189,9 @@ Posteriormente, las configuraciones seleccionadas se evaluaron sobre el conjunto
 
 **Modelo seleccionado para las recomendaciones: SVD.**
 
----
 
-## 🍿 7. Recomendaciones personalizadas
+
+##  7. Recomendaciones personalizadas
 
 Se utilizó SVD para generar recomendaciones al **usuario 196**.
 
@@ -210,9 +209,9 @@ El procedimiento consistió en identificar películas que el usuario no había c
 
 **Nota:** estas puntuaciones son predicciones del modelo, no calificaciones reales realizadas por el usuario.
 
----
 
-## 🛠️ 8. Tecnologías utilizadas
+
+##  8. Tecnologías utilizadas
 
 | Tecnología | Función |
 |:---|:---|
@@ -225,9 +224,9 @@ El procedimiento consistió en identificar películas que el usuario no había c
 | GridSearchCV | Optimización de hiperparámetros |
 | Scikit-learn | Herramientas complementarias |
 
----
 
-## 📂 9. Estructura del proyecto
+
+##  9. Estructura del proyecto
 
 El repositorio contiene:
 
@@ -236,9 +235,9 @@ El repositorio contiene:
 
 El notebook incluye el procedimiento para descargar MovieLens 100K y ejecutar el análisis.
 
----
 
-## ▶️ 10. Cómo ejecutar el proyecto
+
+##  10. Cómo ejecutar el proyecto
 
 1. Abrir el archivo `.ipynb` del repositorio.
 2. Seleccionar la opción para abrirlo en Google Colab o cargarlo manualmente.
@@ -248,9 +247,9 @@ El notebook incluye el procedimiento para descargar MovieLens 100K y ejecutar el
 
 **Importante:** algunos procedimientos, especialmente Girvan-Newman y GridSearchCV, pueden requerir varios minutos de ejecución.
 
----
 
-## ✅ 11. Conclusiones
+
+##  11. Conclusiones
 
 El desarrollo del proyecto permitió integrar teoría de grafos y sistemas de recomendación en un mismo análisis de datos.
 
@@ -270,7 +269,6 @@ El proyecto demuestra cómo las técnicas de análisis de redes permiten estudia
 
 La combinación de estas herramientas constituye una aplicación práctica de la ciencia de datos en el análisis de preferencias y el desarrollo de sistemas inteligentes.
 
----
 
 **Proyecto académico — Maestría en Ciencia de Datos**
 
